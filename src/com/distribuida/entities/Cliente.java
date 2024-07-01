@@ -1,7 +1,5 @@
 package com.distribuida.entities;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +13,8 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table (name = "cliente")
 public class Cliente {
-	//Atrivutos
+	
+	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	@Column (name = "id_cliente")

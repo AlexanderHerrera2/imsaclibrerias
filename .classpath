@@ -6,6 +6,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="lib"/>
 	<classpathentry kind="lib" path="lib/antlr-2.7.7.jar"/>
 	<classpathentry kind="lib" path="lib/byte-buddy-1.11.12.jar"/>
 	<classpathentry kind="lib" path="lib/c3p0-0.9.5.2.jar"/>
