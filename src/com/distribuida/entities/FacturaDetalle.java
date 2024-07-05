@@ -3,7 +3,7 @@ package com.distribuida.entities;
 import org.springframework.stereotype.Component;
 
 @Component
-public class facturaDetalle {
+public class FacturaDetalle {
  
 	private int idFacturaDetalle;
 	private int cantidad;
@@ -11,9 +11,9 @@ public class facturaDetalle {
 	private Factura factura;
 	private Libro libro;
 	
-	public facturaDetalle () {    }
+	public FacturaDetalle () {    }
 	
-	public facturaDetalle(int idFacturaDetalle, int cantidad, float subtotal, int idFactura, int idLibro) {
+	public FacturaDetalle(int idFacturaDetalle, int cantidad, float subtotal, int idFactura, int idLibro) {
 	
 		this.idFacturaDetalle = idFacturaDetalle;
 		this.cantidad = cantidad;

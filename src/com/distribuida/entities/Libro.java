@@ -14,8 +14,8 @@ public class Libro {
 	private Date fechaPublicacion;
 	private String descripcion;
 	private String tipoPasta;
-	private String isbn;
-	private String numEjemplares;
+	private String ISBN;
+	private int numEjemplares;
 	private String portada;
 	private String presentacion;
 	private double precio;
@@ -23,9 +23,10 @@ public class Libro {
 	private Autor autor;
 	public Libro () { }
  
+	
 	public Libro(int idLibro, String titulo, String editorial, int numPaginas, String edicion, String idioma,
-			Date fechaPublicacion, String descripcion, String tipoPasta, String isbn, String numEjemplares,
-			String portada, String presentacion, double precio, int idCategoria, int idAutor) {
+			Date fechaPublicacion, String descripcion, String tipoPasta, String ISBN, int numEjemplares,
+			String portada, String presentacion, double precio) {
 		this.idLibro = idLibro;
 		this.titulo = titulo;
 		this.editorial = editorial;
@@ -35,7 +36,7 @@ public class Libro {
 		this.fechaPublicacion = fechaPublicacion;
 		this.descripcion = descripcion;
 		this.tipoPasta = tipoPasta;
-		this.isbn = isbn;
+		this.ISBN = ISBN;
 		this.numEjemplares = numEjemplares;
 		this.portada = portada;
 		this.presentacion = presentacion;
@@ -116,19 +117,19 @@ public class Libro {
 		this.tipoPasta = tipoPasta;
 	}
  
-	public String getIsbn() {
-		return isbn;
+	public String getISBN() {
+		return ISBN;
 	}
  
-	public void setIsbn(String isbn) {
-		this.isbn = isbn;
+	public void setISBN(String ISBN) {
+		this.ISBN = ISBN;
 	}
  
-	public String getNumEjemplares() {
+	public int getNumEjemplares() {
 		return numEjemplares;
 	}
  
-	public void setNumEjemplares(String numEjemplares) {
+	public void setNumEjemplares(int numEjemplares) {
 		this.numEjemplares = numEjemplares;
 	}
  
@@ -178,7 +179,7 @@ public class Libro {
 	public String toString() {
 		return "Libro [idLibro=" + idLibro + ", titulo=" + titulo + ", editorial=" + editorial + ", numPaginas="
 				+ numPaginas + ", edicion=" + edicion + ", idioma=" + idioma + ", fechaPublicacion=" + fechaPublicacion
-				+ ", descripcion=" + descripcion + ", tipoPasta=" + tipoPasta + ", isbn=" + isbn + ", numEjemplares="
+				+ ", descripcion=" + descripcion + ", tipoPasta=" + tipoPasta + ", ISBN=" + ISBN + ", numEjemplares="
 				+ numEjemplares + ", portada=" + portada + ", presentacion=" + presentacion + ", precio=" + precio
 				+ ", categoria=" + categoria + ", autor=" + autor + "]";
 	}

@@ -32,19 +32,19 @@ public class CategoriaDAOimpl implements CategoriaDAO {
 	}
 
 	@Override
-	public void add(Categoria cliente) {
+	public void add(Categoria categoria) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void up(Categoria cliente) {
+	public void up(Categoria categoria) {
 		// TODO Auto-generated method stub
 
 	}
 
 	@Override
-	public void dell(Categoria cliente) {
+	public void dell(int id) {
 		// TODO Auto-generated method stub
 
 	}

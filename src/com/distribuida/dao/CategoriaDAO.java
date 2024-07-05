@@ -14,5 +14,5 @@ public List<Categoria> findALL();
 	
 	public void up (Categoria categoria);
 	
-	public void dell (Categoria categoria);
+	public void dell (int idCategoria);
 }
