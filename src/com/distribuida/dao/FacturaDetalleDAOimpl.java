@@ -12,7 +12,7 @@ import org.springframework.stereotype.Repository;
 import com.distribuida.entities.FacturaDetalle;
 
 @Repository
-public class FacturaDetalleDetalleDAOimpl implements FacturaDetalleDAO {
+public class FacturaDetalleDAOimpl implements FacturaDetalleDAO {
 	
 	@Autowired
 	private SessionFactory sessionFactory;

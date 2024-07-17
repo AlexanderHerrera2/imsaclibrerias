@@ -16,18 +16,28 @@ public class PrincipalCompra {
 		
 		CompraDAO CompraDAO = context.getBean("compraDAOimpl",CompraDAO.class);
 		
-		// CRUD : CREATE, READ, UPDATE, DELETE
+		//ProveedorDAO proveedorDAO = context.getBean("proveedorDAOimpl",ProveedorDAO.class);
 		
+		//SucursalDAO sucursalDAO = context.getBean("sucursalDAOimpl", SucursualDAO.class);
+		
+		//VendedorDAO vendedorDAO = context.getBean("vendedorDAO", VendedorDAO.class);
+		
+		// CRUD : CREATE, READ, UPDATE, DELETE
+		//compra.setProveedor(proveedorDAO.findOne(1));
 		// Add
-		Compra Compra = new Compra(0,new Date(),1,1,1,105.36);
+		Compra Compra = new Compra(0,new Date(),3,3,3,105.36);
 		//CompraDAO.add(Compra);
+		//Compra.setProveedor(proveedorDAO.findOne(1));
+		//Compra.setSucursal(sucursalDAO.findOne(1));
+		//Compra.setVendedor(vendedorDAO.findOne(1));
+		
 		
 		// Up
 		Compra Compra2 = new Compra(2,new Date(),2,2,2,125.36);
 		//CompraDAO.up(Compra2);
 		
 		// Delete
-		CompraDAO.dell(2);
+		//CompraDAO.dell(2);
 		
 		// findOne
 		System.out.println("**************** DEL ****************"+CompraDAO.findOne(1));
